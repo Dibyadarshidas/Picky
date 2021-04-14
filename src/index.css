@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    
+    background-color: #fafafa;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+    height: 100%;
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.list-grid{
+    width : 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    
+    
+  grid-auto-rows: auto;
+    
+}
+.list-grid img{
+    width: 250px;
+    grid-row-end: span 5;
+}
+footer{
+    text-align: center;
+    padding: 40px;
 }
